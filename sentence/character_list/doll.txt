@@ -1,0 +1,1 @@
+name=コクリコ,attack=15,defense=5,physical=8,speed=12

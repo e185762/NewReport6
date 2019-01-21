@@ -1,0 +1,1 @@
+name=テストエネミー,attack=13,defense=12,physical=11,speed=10

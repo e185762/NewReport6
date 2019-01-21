@@ -1,0 +1,1 @@
+name=テストキャラ,attack=10,defense=11,physical=12,speed=13

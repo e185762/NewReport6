@@ -1,0 +1,1 @@
+name=じっけんしっぱい,attack=3,defense=3,physical=3,speed=3

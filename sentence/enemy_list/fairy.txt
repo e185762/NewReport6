@@ -1,0 +1,1 @@
+name=くるったようせい,attack=4,defense=2,physical=4,speed=5

@@ -1,0 +1,1 @@
+name=オルトリンデ,attack=8,defense=8,physical=8,speed=6

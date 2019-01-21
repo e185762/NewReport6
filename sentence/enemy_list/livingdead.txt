@@ -1,0 +1,1 @@
+name=しにぞこないのしたい,attack=3,defense=2,physical=8,speed=2

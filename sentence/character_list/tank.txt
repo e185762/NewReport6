@@ -1,0 +1,1 @@
+name=アリュメット,attack=5,defense=8,physical=13,speed=4

@@ -1,0 +1,1 @@
+name=ちゅうぎなききし,attack=2,defense=5,physical=7,speed=1
