@@ -163,7 +163,6 @@ public class Adventure {
         String[] story_list= dir.list();
         Random random = new Random();
         int num = random.nextInt(story_list.length)+1;
-        //int num = random.nextInt(3)+1;
         Adventure("./sentence/story_list/"+dirctor_name+"/talk_story_list/talk"+num+".txt");
 
     }

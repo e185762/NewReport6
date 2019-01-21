@@ -37,6 +37,12 @@ public class Enemy {
     Scanner in = new Scanner(System.in);
 
     /**
+     * Adventureクラスのコンストラクタ
+     */
+    Adventure adventure = new Adventure();
+
+
+    /**
      * エネミーのステータス値が書かれたテキストファイルを読み込み、
      * フィールド関数「enemy_name」「enemy_physical」「enemy_attack」
      * 「enemy_defense」「enemy_speed」に当てはめるメソッド
@@ -84,17 +90,12 @@ public class Enemy {
      * @throws IOException ファイル入出力時に起こる例外
      */
     public void EnemyDicision() throws IOException {
+
+        File dir = new File("./sentence/enemy_list");
+        String[] story_list= dir.list();
         Random random = new Random();
-        int num = random.nextInt(40);
-        if (num<10){
-            MakeAvilityList("./sentence/enemy_list/fairy.txt");
-        }else if (num<20){
-            MakeAvilityList("./sentence/enemy_list/livingdead.txt");
-        }else if (num<30){
-            MakeAvilityList("./sentence/enemy_list/slime.txt");
-        }else if (num<40){
-            MakeAvilityList("./sentence/enemy_list/undeadknight.txt");
-        }
+        int num = random.nextInt(story_list.length)+1;
+        MakeAvilityList("./sentence/enemy_list/enemy"+num+".txt");
 
     }
 
