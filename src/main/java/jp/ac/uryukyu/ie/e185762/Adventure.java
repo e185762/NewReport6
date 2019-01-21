@@ -106,6 +106,7 @@ public class Adventure {
         String[] story_list = null;
         String dir_name = null;
 
+
         for (int num = 0; num<choice_comands.length; num++){
             if (choice_comands[num].equals(character_code)){
                 File dir = new File("./sentence/story_list/"+character_dir[num]+"/"+story_part+"_story_list");
@@ -121,7 +122,9 @@ public class Adventure {
                 int enemy_attack = 0;
                 boolean success = false;
                 while (success == false) {
-                    System.out.println(tool.fileToString(new  File("./sentence/mainmenu.txt")));
+                    System.out.print("倒した「魔物」の数："+enemy_attack+"体");
+                    System.out.println("");
+                    System.out.print(tool.fileToString(new  File("./sentence/mainmenu.txt")));
                     System.out.print("＞＞＞");
 
                     String input_order = in.nextLine();
@@ -134,6 +137,7 @@ public class Adventure {
                         enemy_attack++;
                         if (enemy_attack == enemy_attack_number) {
                             success = true;
+                            System.out.println("=========================================");
                         }
                     } else {
                         continue;
@@ -141,7 +145,7 @@ public class Adventure {
 
                 }
             }else{
-                System.out.println("おわり");
+                System.out.println(story_part+"章おわり");
             }
         }
 
@@ -181,7 +185,6 @@ public class Adventure {
      * @return　キャラクタの種類を決める文字
      * @throws IOException ファイル入出力時に起こる例外
      */
-
     public String FirstStory(Character character) throws IOException{
         Adventure("./sentence/story_list/first.txt");
         boolean input = false;

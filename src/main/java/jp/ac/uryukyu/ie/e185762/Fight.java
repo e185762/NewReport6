@@ -60,7 +60,7 @@ public class Fight {
                 e_result=result[1];
 
             }else if (input_comand.equals("s")){
-                System.out.println(character.character_name+"は回避体制にはいった！");
+                System.out.println(character.character_name+"は"+enemy.enemy_name+"と距離をとった");
                 in.nextLine();
                 System.out.println("このターンのダメージは０");
                 e_result=enemy_hitpoint;

@@ -8,9 +8,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AdventureTest {
 
-    @Test
-    void CharacterTalk() throws IOException {
-        Adventure adventure = new Adventure();
-
-    }
+    //このクラスのメソッドはToolsクラス等の他のクラスができていれば正しく機能するものである物のため、
+    //ユニットテストはありません
 }
